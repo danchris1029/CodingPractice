@@ -9,4 +9,4 @@ Strategy:
   3. If you're having trouble finding a solution, then leave the problem and return to finish it the following day.
 
 Note:
-  - If you're feeling burned out, ignore the planning and just yolo some easy problems. Don't push yourself to think too hard if it will make you dislike practicing problems.
+  - If you're feeling burned out, ignore the planning and just yolo some easy problems. Don't push yourself to think too hard because that will make you dislike programming.
