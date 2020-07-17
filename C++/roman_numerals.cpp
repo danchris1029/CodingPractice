@@ -1,6 +1,3 @@
-#include <iostream>
-#include <unordered_map>
-#include <string>
 
 /*
 For example, two is written as II in Roman numeral, just two one's added together. Twelve is written as, XII, which is simply X + II. The number twenty seven is written as XXVII, which is XX + V + II.
@@ -14,8 +11,11 @@ Given an integer, convert it to a roman numeral.Input is guaranteed to be within
 */
 
 
-int romanNumeral(std::string str) {
-	static std::unordered_map<std::string, int> const single = { {"I", 1}, {"V", 5}, {"X", 10}, {"L", 50}, {"C", 100}, {"D", 500}, {"M", 1000} };
+class Solution {
+public:
+   
+    int romanToInt(string str) {
+        static std::unordered_map<std::string, int> const single = { {"I", 1}, {"V", 5}, {"X", 10}, {"L", 50}, {"C", 100}, {"D", 500}, {"M", 1000} };
 	static std::unordered_map<std::string, int> const multi = { {"IV", 4}, {"IX", 9}, {"XL", 40}, {"XC", 90}, {"CD", 400}, {"CM", 900} };
 	int sum = 0;
 	for (int i = 0; i < str.length(); i++) {
@@ -33,8 +33,5 @@ int romanNumeral(std::string str) {
 			sum += single.find(currentLetter)->second;
 	}
 	return sum;
-}
-
-int main() {
-	std::cout << romanNumeral("MMXXV") << std::endl;
-}
+    }
+};
