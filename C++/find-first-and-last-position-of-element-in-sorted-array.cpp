@@ -9,6 +9,8 @@ public:
     vector<int> searchRange(vector<int>& nums, int target) {
         vector<int> indexs = {-1, -1};
         
+        // All about that binary search
+        
         int foundIndex = -1;
         int l = 0,
             h = nums.size()-1;
